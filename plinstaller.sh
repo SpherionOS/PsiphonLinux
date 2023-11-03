@@ -1,7 +1,7 @@
 #! /bin/bash
 
 #Download neccessary scripts and files
-wget https://raw.githubusercontent.com/Psiphon-Labs/psiphon-tunnel-core-binaries/master/linux/psiphon-tunnel-core-x86_64
+wget https://raw.githubusercontent.com/SpherionOS/PsiphonLinux/main/psiphon-tunnel-core-x86_64
 wget https://raw.githubusercontent.com/SpherionOS/PsiphonLinux/main/psiphon.config
 wget https://raw.githubusercontent.com/SpherionOS/PsiphonLinux/main/psiphon.sh
 
