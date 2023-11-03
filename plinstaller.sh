@@ -1,8 +1,8 @@
 #! /bin/bash
 
 #Download neccessary scripts and files
-wget https://github.com/Psiphon-Labs/psiphon-tunnel-core-binaries/raw/master/li>
-wget https://raw.githubusercontent.com/SpherionOS/PsiphonLinux/main/psiphon.con>
+wget https://raw.githubusercontent.com/Psiphon-Labs/psiphon-tunnel-core-binaries/master/linux/psiphon-tunnel-core-x86_64
+wget https://raw.githubusercontent.com/SpherionOS/PsiphonLinux/main/psiphon.config
 wget https://raw.githubusercontent.com/SpherionOS/PsiphonLinux/main/psiphon.sh
 
 #Give these files the executable permission
