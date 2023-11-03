@@ -21,4 +21,8 @@ There are two ways to install Psiphon for linux, the recomended way is having it
 6. `sh plinstaller.sh` Runs the installation script
 
 ## Starting Psiphon
-To start Psiphon, make sure you have first installed it by using either the manual or automatic steps. Once that is done, ensure you are in the directory where you installed Psiphon
+To start Psiphon, make sure you have first installed it by using either the manual or automatic steps. Once that is done, ensure you are in the directory where you installed Psiphon by running `ls` in the terminal and verifying that there are psiphon files there. Once verified, the command to start Psiphon VPN with the provided config file is `./'psiphon-tunnel-core-x86_64' -config psiphon.config`. Once ran, Psiphon will begin running as a local proxy and the port 8081 will handle http and https requests whereas the port 1081 will handle SOCKS 4/5 requests.
+
+## Connecting the local Psiphon proxy
+### Firefox/Web Browsers
+When using Psiphon in a browser you need to navidate to the browser settings and locate the proxy settings for your browser. Once there, enter the localhost ip address with port 8081 appended to it in the proxy settings exactly like `127.0.0.1:8081` for the http and https proxy. Repeat the same for SOCKS 4/5 proxy except the port will be 1081 and will look like `127.0.0.1:1081`. To verify, search `https://whatismyipaddress.com/` and ensure that it is not the same as your original ip.
