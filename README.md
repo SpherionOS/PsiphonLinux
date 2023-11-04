@@ -12,7 +12,7 @@ There are two ways to install Psiphon for linux, the recomended way is having it
 4. `cd PsiphonLinux` Changes the directory to PsiphonLinux
 5. `chmod +x psiphon-tunnel-core-x86_64` Gives the executable permission to the psiphon binary
 
-## Automatic Installation (Alpha)
+## Automatic Installation (Beta)
 1. Ensure wget is installed. If wget is not installed, look up the installation guide for your Linux distro
 2. Open a terminal and run the following commands
 3. `mkdir PsiphonLinux` Makes a directory where Psiphon will be stored
