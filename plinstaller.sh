@@ -12,20 +12,37 @@ chmod +x ./psiphon.sh
 echo " "
 echo "Running post install checks"
 echo " "
-
+echo "Checking if files exist (Phase 1/2)"
 if test -f psiphon-tunnel-core-x86_64; then
   echo "Psiphon binary found"
-  else "ERROR: Psiphon binary not found"
+else "ERROR: Psiphon binary not found"
 fi
 
 if test -f psiphon.config; then
   echo "Psiphon configuration found"
-  else "ERROR: Psiphon configuration not found"
+else "ERROR: Psiphon configuration not found"
 fi
 
 if test -f psiphon.sh; then
   echo "Psiphon startup script found"
-  else "ERROR: Psiphon startup script not found"
+else "ERROR: Psiphon startup script not found"
+fi
+
+echo " "
+echo "Checking if correct permssions have been applied (Phase 2/2)"
+
+if test -x psiphon-tunnel-core-x86_64;
+then
+    echo "Psiphon binaries have correct permissions"
+else
+    echo "ERROR: Psiphon binaries do not have required permissions"
+fi
+
+if test -x psiphon.sh;
+then
+    echo "Psiphon startup file has correct permissions"
+else
+    echo "ERROR: Psiphon startup file does not have required permission"
 fi
 
 echo " "
