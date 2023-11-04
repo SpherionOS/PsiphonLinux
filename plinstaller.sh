@@ -1,13 +1,19 @@
 #! /bin/bash
 
 #Download neccessary scripts and files
-wget https://raw.githubusercontent.com/SpherionOS/PsiphonLinux/main/psiphon-tunnel-core-x86_64
-wget https://raw.githubusercontent.com/SpherionOS/PsiphonLinux/main/psiphon.config
-wget https://raw.githubusercontent.com/SpherionOS/PsiphonLinux/main/psiphon.sh
+echo "Starting downloads"
+wget https://raw.githubusercontent.com/SpherionOS/PsiphonLinux/main/psiphon-tunnel-core-x86_64 --quiet
+wget https://raw.githubusercontent.com/SpherionOS/PsiphonLinux/main/psiphon.config --quiet
+wget https://raw.githubusercontent.com/SpherionOS/PsiphonLinux/main/psiphon.sh --quiet
+echo "Downloads finished"
+
+echo " "
+echo "Installing"
 
 #Give these files the executable permission
 chmod +x ./psiphon-tunnel-core-x86_64
 chmod +x ./psiphon.sh 
+echo "Installation finished"
 
 echo " "
 echo "Running post install checks"
