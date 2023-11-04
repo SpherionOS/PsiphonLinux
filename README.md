@@ -11,6 +11,7 @@ There are two ways to install Psiphon for linux, the recomended way is having it
 3. `git clone https://github.com/SpherionOS/PsiphonLinux.git` Clones the PsiphonLinux repository
 4. `cd PsiphonLinux` Changes the directory to PsiphonLinux
 5. `chmod +x psiphon-tunnel-core-x86_64` Gives the executable permission to the psiphon binary
+6. `chmod +x psiphon.sh` Gives the executable permission to the psiphon startup script
 
 ## Automatic Installation (Beta)
 1. Ensure wget is installed. If wget is not installed, look up the installation guide for your Linux distro
