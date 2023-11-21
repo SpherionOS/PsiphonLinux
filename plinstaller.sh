@@ -53,4 +53,4 @@ fi
 
 echo " "
 #Finish installer and give message
-echo "Psiphon Linux installation successfully completed. Run ./psiphon.sh with root permissions to run the program. Please allow a reasonable amount of time to elapse for Psiphon to connect"
+echo "Psiphon Linux installation successfully completed. Run ရန် ./psiphon.sh  သုံးပါ.အဆင်ပြေပါစေ"
