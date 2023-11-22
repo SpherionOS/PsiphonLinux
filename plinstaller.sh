@@ -2,7 +2,7 @@
 
 #Download neccessary scripts and files
 echo "Starting downloads"
-wget https://raw.githubusercontent.com/SpherionOS/PsiphonLinux/main/psiphon-tunnel-core-x86_64 --quiet
+wget https://raw.githubusercontent.com/Psiphon-Labs/psiphon-tunnel-core-binaries/master/linux/psiphon-tunnel-core-x86_64 --quiet
 wget https://raw.githubusercontent.com/SpherionOS/PsiphonLinux/main/psiphon.config --quiet
 wget https://raw.githubusercontent.com/SpherionOS/PsiphonLinux/main/psiphon.sh --quiet
 echo "Downloads finished"
@@ -53,4 +53,4 @@ fi
 
 echo " "
 #Finish installer and give message
-echo "Psiphon Linux installation successfully completed. Run ./psiphon.sh with root permissions to run the program. Please allow a reasonable amount of time to elapse for Psiphon to connect"
+echo "Psiphon Linux installation successfully completed. Run ရန် ./psiphon.sh  သုံးပါ.အဆင်ပြေပါစေ"
