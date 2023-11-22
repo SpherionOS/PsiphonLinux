@@ -2,7 +2,7 @@
 
 #Download neccessary scripts and files
 echo "Starting downloads"
-wget https://raw.githubusercontent.com/SpherionOS/PsiphonLinux/main/psiphon-tunnel-core-x86_64 --quiet
+wget https://raw.githubusercontent.com/Psiphon-Labs/psiphon-tunnel-core-binaries/master/linux/psiphon-tunnel-core-x86_64 --quiet
 wget https://raw.githubusercontent.com/SpherionOS/PsiphonLinux/main/psiphon.config --quiet
 wget https://raw.githubusercontent.com/SpherionOS/PsiphonLinux/main/psiphon.sh --quiet
 echo "Downloads finished"
