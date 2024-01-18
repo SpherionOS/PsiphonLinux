@@ -1,6 +1,6 @@
 # PsiphonLinux
 
-A simple way to run the Psiphon VPN on Linux for a secure connection to the internet. This repository includes all the scripts and files in order to run Psiphon on linux as well as quality of life scripts which will be described below.
+A simple way to run the Psiphon VPN on Linux for a uncensored connection to the internet. This repository includes all the scripts and files in order to run Psiphon on linux as well as quality of life scripts which will be described below.
 
 ## Ways to install Psiphon Linux
 There are two ways to install Psiphon for linux, the recomended way is having it installed manually with steps below, but there is also an installation script that can be ran instead
