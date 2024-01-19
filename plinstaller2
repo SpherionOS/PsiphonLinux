@@ -1,0 +1,59 @@
+#! /bin/bash
+
+#Create necessary directories
+mkdir /etc/psiphon/
+
+#Download neccessary scripts and files
+echo "Starting downloads"
+wget -P /etc/psiphon/ https://raw.githubusercontent.com/Psiphon-Labs/psiphon-tunnel-core-binaries/master/linux/psiphon-tunnel-core-x86_64 --quiet
+wget -P /etc/psiphon/ https://raw.githubusercontent.com/SpherionOS/PsiphonLinux/main/psiphon.config --quiet
+wget -P /usr/bin/ https://raw.githubusercontent.com/SpherionOS/PsiphonLinux/main/universal-install/psiphon --quiet
+echo "Downloads finished"
+
+echo " "
+echo "Installing"
+
+#Give these files the executable permission
+chmod +x /etc/psiphon/psiphon-tunnel-core-x86_64
+chmod +x /usr/bin/psiphon 
+echo "Installation finished"
+
+echo " "
+echo "Running post install checks"
+echo " "
+echo "Checking if files exist (Phase 1/2)"
+if test -f /etc/psiphon/psiphon-tunnel-core-x86_64; then
+  echo "Psiphon binary found"
+else "ERROR: Psiphon binary not found"
+fi
+
+if test -f /etc/psiphon/psiphon.config; then
+  echo "Psiphon configuration found"
+else "ERROR: Psiphon configuration not found"
+fi
+
+if test -f /usr/bin/psiphon; then
+  echo "Psiphon startup script found"
+else "ERROR: Psiphon startup script not found"
+fi
+
+echo " "
+echo "Checking if correct permssions have been applied (Phase 2/2)"
+
+if test -x /etc/psiphon/psiphon-tunnel-core-x86_64;
+then
+    echo "Psiphon binaries have correct permissions"
+else
+    echo "ERROR: Psiphon binaries do not have required permissions"
+fi
+
+if test -x /usr/bin/psiphon;
+then
+    echo "Psiphon startup file has correct permissions"
+else
+    echo "ERROR: Psiphon startup file does not have required permission"
+fi
+
+echo " "
+#Finish installer and give message
+echo "Psiphon Linux installation successfully completed. Run sudo ./psiphon.sh to start the program. Please allow a reasonable amount for Psiphon to connect as it may take a while"
