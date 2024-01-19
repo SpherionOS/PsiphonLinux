@@ -1,6 +1,6 @@
 # PsiphonLinux v2.0 Alpha
 
-A simple way to run the Psiphon VPN on Linux for a uncensored connection to the internet. This repository includes all the scripts and files in order to run Psiphon on linux as well as quality of life scripts which will be described below.
+A simple way to run the Psiphon VPN on Linux for an uncensored connection to the internet. This repository includes all the scripts and files in order to run Psiphon on linux as well as quality of life scripts which will be described below.
 
 ## Changelog
 19/1/2024: PsiphonLinux v2.0 Alpha
