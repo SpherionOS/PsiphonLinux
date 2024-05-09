@@ -7,7 +7,7 @@ mkdir /etc/psiphon/
 echo "Starting downloads"
 wget -P /etc/psiphon/ https://raw.githubusercontent.com/Psiphon-Labs/psiphon-tunnel-core-binaries/master/linux/psiphon-tunnel-core-x86_64 --quiet
 wget -P /etc/psiphon/ https://raw.githubusercontent.com/SpherionOS/PsiphonLinux/main/psiphon.config --quiet
-wget -P /usr/bin/ https://raw.githubusercontent.com/SpherionOS/PsiphonLinux/main/universal-install/psiphon --quiet
+wget -P /usr/bin/ https://raw.githubusercontent.com/SpherionOS/PsiphonLinux/main/psiphon --quiet
 echo "Downloads finished"
 
 echo " "
