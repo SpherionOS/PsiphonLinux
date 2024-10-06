@@ -49,6 +49,7 @@ You will need to edit the `psiphon.config` file and change the `"EgressRegion":"
 06/10/2024: PsiphonLinux v2.11 Beta
 - Added `pluninstaller` script for uninstallation (Credits to ercerd for the suggestion)
 - Added `pluninstaller` to the `plinstaller2` download and installation list
+- Modified `plinstaller2` to check for successful download of `pluninstaller`
 - Added `Uninstallation Procedure` to the `README.md` 
 
 
