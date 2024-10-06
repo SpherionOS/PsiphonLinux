@@ -8,6 +8,7 @@ echo "Starting downloads"
 wget -P /etc/psiphon/ https://raw.githubusercontent.com/Psiphon-Labs/psiphon-tunnel-core-binaries/master/linux/psiphon-tunnel-core-x86_64 --quiet
 wget -P /etc/psiphon/ https://raw.githubusercontent.com/SpherionOS/PsiphonLinux/main/psiphon.config --quiet
 wget -P /usr/bin/ https://raw.githubusercontent.com/SpherionOS/PsiphonLinux/main/psiphon --quiet
+wget https://raw.githubusercontent.com/SpherionOS/PsiphonLinux/refs/heads/main/pluninstaller --quiet
 echo "Downloads finished"
 
 echo " "
@@ -35,6 +36,11 @@ fi
 if test -f /usr/bin/psiphon; then
   echo "Psiphon startup script found"
 else "ERROR: Psiphon startup script not found"
+fi
+
+if test -f pluninstaller; then
+  echo "Psiphon uninstall script found"
+else "ERROR: Psiphon uninstall script not found"
 fi
 
 echo " "
