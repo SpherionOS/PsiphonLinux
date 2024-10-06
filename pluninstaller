@@ -5,4 +5,4 @@
 rm -rf /etc/psiphon
 rm -rf /bin/usr/psiphon
 rm -rf plinstaller2
-rm -rf pluninstall
+rm -rf pluninstaller
