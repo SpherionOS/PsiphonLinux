@@ -1,4 +1,4 @@
-# PsiphonLinux v2.01 Beta
+# PsiphonLinux v2.11 Beta
 
 A simple way to run the Psiphon VPN on Linux for an uncensored connection to the internet. This repository includes all the scripts and files in order to run Psiphon on linux as well as quality of life scripts which will be described below.
 
@@ -26,6 +26,10 @@ There are two ways to install Psiphon for linux, the recomended way is the autom
 3. Download the newest version by pasting `wget https://raw.githubusercontent.com/Psiphon-Labs/psiphon-tunnel-core-binaries/master/linux/psiphon-tunnel-core-x86_64`
 4. Add the executable permission to it by `sudo chmod +x psiphon-tunnel-core-x86_64`
 
+## Uninstallation Procedure
+1. Run `sudo sh pluninstaller` in the directory where the `plinstaller2` installation script was first downloaded
+2. If the `pluninstaller` file cannot be found, run `https://raw.githubusercontent.com/SpherionOS/PsiphonLinux/refs/heads/main/pluninstaller` to download the script, and then repeat the step above
+
 ## Starting Psiphon
 ### Manual Install
 To start PsiphonLinux after a manual install, ensure you are in the directory where you installed Psiphon by running `ls` in the terminal and verifying that there are psiphon files there. Once verified, the command to start Psiphon VPN with the provided config file is `./'psiphon-tunnel-core-x86_64' -config psiphon.config`. Once ran, Psiphon will begin running as a local proxy and the port 8081 will handle http and https requests whereas the port 1081 will handle SOCKS 4/5 requests. 
@@ -41,14 +45,22 @@ When using Psiphon in a browser you need to navidate to the browser settings and
 You will need to edit the `psiphon.config` file and change the `"EgressRegion":"US",` to your desired region by replacing the `US` with any valid country code that has a Psiphon server. At the time of writing, all the valid country codes are `"AT","BE","BG","CA","CH","CZ","DE","DK","EE","ES","FI","FR","GB","HU","IE","IN","IT","JP","LV","NL","NO","PL","RO","RS","SE","SG","SK","US"`. Depending on which installation method you used, the file will be located in different places. If installed automatically it will be found at `/etc/psiphon/psiphon.config`. If installed manually, it should be in the folder where you installed Psiphon under the name `psiphon.config`.
 
 ## Changelog
+
+06/10/2024: PsiphonLinux v2.11 Beta
+- Added `pluninstaller` script for uninstallation (Credits to ercerd for the suggestion)
+- Added `pluninstaller` to the `plinstaller2` download and installation list
+- Added `Uninstallation Procedure` to the `README.md` 
+
+
+02/08/2024: PsiphonLinux v2.01 Beta
+- Moving into open beta testing. The majority of the code has been tested and found to be in working order from multiple users down. However it is not up to the quality I would like to get it to eventually so for now its in beta
+- Modified `How do I choose a region to connect to?` in the FAQ to provide accurate instructions.
+- Added `"EgressRegion":"US"` to `psiphon.config` to allow accessible changing of regions
+
+
 19/01/2024: PsiphonLinux v2.0 Alpha
 - Archived all files of PsiphonLinux V1.0 to `/PsiphonLinux/archive/`
 - Changed the psiphon files location to `/usr/bin/` and `/etc/psiphon/` for ease of access allowing the `psiphon` command to be used outside of the local directory
 - Modified the `plinstaller` to reflect these changes
 - Replaced Psiphon Tunnel Core binary source with the official link to the Psiphon repository (Credits to victorgeel)
 - Changed the operating directory of psiphon to `/etc/psiphon/` to provide a cleaner experience
-
-02/08/2024: PsiphonLinux v2.01 Beta
-- Moving into open beta testing. The majority of the code has been tested and found to be in working order from multiple users down. However it is not up to the quality I would like to get it to eventually so for now its in beta
-- Modified `How do I choose a region to connect to?` in the FAQ to provide accurate instructions.
-- Added `"EgressRegion":"US"` to `psiphon.config` to allow accessible changing of regions
