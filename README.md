@@ -38,7 +38,7 @@ To start PsiphonLinux after a manual install, ensure you are in the directory wh
 Run `sudo psiphon` anywhere in the terminal to start psiphon. Once ran, Psiphon will begin running at `127.0.0.1:8081` to handle http and https requests whereas the `127.0.0.1:1081` will handle SOCKS 4/5 requests.
 
 ## FAQ
-### How do I connect to a proxy in a browser
+### How do I connect to a proxy in a browser?
 When using Psiphon in a browser you need to navigate to the browser settings and locate the proxy settings for your browser. Once there, enter the localhost ip address with port 8081 appended to it in the proxy settings exactly like `127.0.0.1:8081` for the http and https proxy. Repeat the same for SOCKS 4/5 proxy except the port will be 1081 and will look like `127.0.0.1:1081`. To verify, search `https://whatismyipaddress.com/` and ensure that it is not the same as your original ip.
 
 ### How do I choose a region to connect to?
