@@ -9,7 +9,10 @@ wget -P /etc/psiphon/ https://raw.githubusercontent.com/Psiphon-Labs/psiphon-tun
 wget -P /etc/psiphon/ https://raw.githubusercontent.com/SpherionOS/PsiphonLinux/main/psiphon.config --quiet
 wget -P /usr/bin/ https://raw.githubusercontent.com/SpherionOS/PsiphonLinux/main/psiphon --quiet
 wget https://raw.githubusercontent.com/SpherionOS/PsiphonLinux/refs/heads/main/pluninstaller --quiet
+wget https://raw.githubusercontent.com/SpherionOS/PsiphonLinux/refs/heads/dev/psiphon.service --quiet
 echo "Downloads finished"
+
+cp psiphon.service /etc/systemd/system/psiphon.service
 
 echo " "
 echo "Installing"
