@@ -1,0 +1,13 @@
+[Unit]
+Description=Psiphon Service
+After=network.target
+
+[Service]
+User=root
+WorkingDirectory=/etc/psiphon/
+ExecStart=/usr/local/bin/psiphon
+Restart=on-failure
+RestartSec=5s
+
+[Install]
+WantedBy=multi-user.target
